@@ -9,6 +9,7 @@
   
 #If you wish to see how your Secrets look, execute the following command,  
   kubectl get secret spring-security -o yaml
+  kubectl get secret spring-github-demo -o yaml
   
 #The sample output of the above command is shown below.
 apiVersion: v1
