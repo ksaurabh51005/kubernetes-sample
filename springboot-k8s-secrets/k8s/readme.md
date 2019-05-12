@@ -1,12 +1,11 @@
-#Secrets as Environment Variables
-  kubectl create secret generic spring-security \
---from-literal=spring.user.name=demo \
---from-literal=spring.user.password=password
+## Secrets as Environment Variables
+	kubectl create secret generic spring-security --from-literal=spring.user.name=demo --from-literal=spring.user.password=password
+	
+	kubectl get secret spring-security -o yaml
+
 
 #Create secrets from file
-  kubectl create secret generic spring-github-demo \
-  --from-file ./github.user \
-  --from-file ./github.token
+  kubectl create secret generic spring-github-demo --from-file ./github.user --from-file ./github.token
   
 #If you wish to see how your Secrets look, execute the following command,  
   kubectl get secret spring-security -o yaml
