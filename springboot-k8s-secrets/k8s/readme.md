@@ -25,3 +25,6 @@ metadata:
   selfLink: /api/v1/namespaces/default/secrets/spring-security
   uid: a0e0254e-9d4e-11e7-9b8d-080027da6995
 type: Opaque
+
+## Link
+https://developers.redhat.com/blog/2017/10/04/configuring-spring-boot-kubernetes-secrets/
