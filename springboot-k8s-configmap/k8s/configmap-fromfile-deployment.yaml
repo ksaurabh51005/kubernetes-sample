@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: springboot-configmap-app
-          image: registry.hub.docker.com/kumarsaurabh/springboot-configmap-app:1.0
+          image: registry.hub.docker.com/kumarsaurabh/springboot-configmap-app:1.1
           ports:
             - containerPort: 8085
           env:
@@ -27,7 +27,7 @@ spec:
                   key: greeter.prefix
           volumeMounts:
             - name: application-config 
-              mountPath: "/deployments/config" 
+              mountPath: "/app/config" 
               readOnly: true
       volumes:
         - name: application-config
